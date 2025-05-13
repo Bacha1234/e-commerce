@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider_content {
+    height: 65vh;
+    width: 100%;
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/slider_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent image repetition */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.slider_btn{
+    border-radius: 50%;
+    border: 0.1px solid rgb(97, 94, 94);
+    cursor: pointer;
+}
+
+/* Large Screens (Desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    .slider_content {
+        height: 75vh; /* Slightly increase height for larger screens */
+    }
+
+    .slider_btn {
+        height: 50px;
+        width: 50px;
+        font-size: 24px;
+    }
+}
+
+/* Medium Screens (Tablets, between 768px and 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .slider_content {
+        height: 70vh;
+    }
+
+    .slider_btn {
+        height: 45px;
+        width: 45px;
+        font-size: 22px;
+    }
+}
+
+/* Small Screens (Mobile Landscape, between 576px and 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+    .slider_content {
+        height: 60vh;
+    }
+
+    .slider_btn {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+}
+
+/* Extra Small Screens (Mobile Portrait, 575px and below) */
+@media (max-width: 575px) {
+    .slider_content {
+        height: 50vh; /* Reduce height for small screens */
+    }
+
+    .slider_btn {
+        height: 35px;
+        width: 35px;
+        font-size: 18px;
+    }
+
+    .slider {
+        background-size: contain; /* Ensure the image fits smaller screens */
+        background-position: center center; /* Center the image */
+    }
+}
+

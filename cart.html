@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+     <!-- HEADER  -->
+     <div id="1"></div>
+     <script>
+         load("header.html");
+         function load(url)
+         {
+             req = new XMLHttpRequest();
+             req.open("GET", url, false);
+             req.send(null);
+             document.getElementById(1).innerHTML = req.responseText;
+         }
+     </script>
+ 
+
+     <!-- CART for products-->
+      <div class="cartcontainer" id="_1">
+        <div class="text">
+            <h1 id="cartheading">Checkout</h1>
+            <h3 id="cartcount">Total items : 2</h3>
+        </div>
+
+        <div class="checkout">
+
+            <div class="delivery_option">
+                <div class="images">
+                    <div class="product_1">
+                        <div class="image_1"></div>
+                        <div class="text">
+                            <h2>Men's Ski Jacket</h2>
+                            <p>RS : 4500</p>
+                            <p>Quantity : <select class="quantity">
+                                <option >1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select></p>
+                        </div>
+                    </div>
+
+                    <div class="product_1">
+                        <div class="image_2"></div>
+                        <div class="text">
+                            <h2>Men's Winter Jacket</h2>
+                            <p>RS : 5500</p>
+                            <p>Quantity : <select class="quantity">
+                                <option >1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="delivery_option_text">
+                <div class="delivery_option_heading">
+                    Choose a dilivery option:
+                </div>
+
+                <div class="d_optionn_1">
+                    <div class="radioBtn">
+                        <input class="cartinput" type="radio" checked>
+                    </div>
+                    <div class="delivery_date">
+                        <p class="date">Friday, December 24</p>
+                        <p class="price">Free-Delivery</p>
+                    </div>
+                </div>
+
+                <div class="d_optionn_1">
+                    <div class="radioBtn">
+                        <input class="cartinput" type="radio">
+                    </div>
+                    <div class="delivery_date">
+                        <p class="date">Tuesday, December 21</p>
+                        <p class="price">RS : 500 Charges</p>
+                    </div>
+                </div>
+
+                <div class="d_optionn_1">
+                    <div class="radioBtn">
+                        <input class="cartinput" type="radio">
+                    </div>
+                    <div class="delivery_date">
+                        <p class="date">Saturday, December 18</p>
+                        <p class="price">RS : 800 Charges</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="placeorder">
+                <h3 id="totalamounttext">total amount</h3>
+                <h3 id="totalamount">Amount : RS 10000</h3>
+                <button id="placeorderbtn">place order</button>
+            </div>
+        </div>
+      </div>
+
+
+
+              <!-- CONTACT DETAILS    FOOTER -->
+<div id="4"></div>
+<script>
+    load("footer.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+    }
+</script>
+
+<script src="script/cart.js"></script>
+</body>
+</html>

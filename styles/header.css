@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+                        /* Header  */
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.border:hover{
+    border: 1px solid white;
+}
+ /* logo  */
+.nav_logo{
+    height: 60px;
+    width: 150px;
+    
+}
+
+.logo{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    margin: 9px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Location  */
+.location{
+    height: 60px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loc_icon{
+   font-size: 1.5rem;
+   position: relative;
+   margin-right: 10px;
+}
+/* Search details styling  */
+.navsearch{
+    height:40px;
+    display: flex;
+    justify-content: center;
+}
+
+.selection{
+    width: 40px;
+    border: 0.0001 solid rgb(151, 145, 145) ;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.Search-bar{
+    width: 43vw;
+    background-color: #ffffff;
+    border: none;
+}
+
+.addsearchicon{
+    background-color: #bb7711;
+    width: 40px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+/* login details  */
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_icon{
+    font-size: 1.5rem;
+    position: relative;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* order styling  */
+.order{
+    display: flex;
+    flex-direction: column;
+}
+/* Cart styling */
+
+.cart_icon{
+    display: inline-block;
+    font-size: 1.5rem;
+    position: relative;
+    margin-right: 10px;
+}
+
+.cart {
+    position: relative;
+    display: inline-block;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+#cartCount {
+    font-size: 14px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* Panel styling  */
+.panel{
+    height: 40px;
+    color: #eefdf6;
+    background-color: #16a1a1;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    margin-left: 20px;
+}
+.panelP1{
+    padding-left: 10px;
+}
+.panelP2{
+    margin-left: 20px;
+}
+.panelP3{
+    margin-left: 20px;
+}
+.panelP4{
+    margin-left: 20px;
+}
+.panelP5{
+    margin-left: 20px;
+}
+.panelP6{
+    margin-left: 20px;
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav_logo {
+        height: 50px;
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .location {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navsearch {
+        width: 100%;
+    }
+
+    .Search-bar {
+        width: 80%;
+    }
+
+    .addsearchicon {
+        width: 10%;
+    }
+
+    .login, .order, .cart {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .panel {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .panel div {
+        margin-bottom: 5px;
+    }
+}
+
+/* Small Tablets and Phones */
+@media (max-width: 576px) {
+    .logo {
+        height: 40px;
+        width: 100px;
+        margin: 5px auto;
+    }
+
+    .location_p1, .location_p2 {
+        font-size: 0.8rem;
+    }
+
+    .Search-bar {
+        font-size: 0.9rem;
+    }
+
+    .login_text a {
+        font-size: 1rem;
+    }
+
+    .cart sup#cartCount {
+        font-size: 12px;
+    }
+
+    .panel {
+        height: auto;
+        padding: 10px 5px;
+        flex-wrap: wrap;
+    }
+
+    .panel div {
+        font-size: 0.9rem;
+    }
+}
+
+/* Larger Screens and Desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        height: 80px;
+    }
+
+    .search {
+        width: 60%;
+    }
+
+    .Search-bar {
+        width: 75%;
+    }
+
+    .cart sup#cartCount {
+        font-size: 12px;
+        padding: 3px;
+    }
+}
+
+

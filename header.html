@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>KUMO</title>
+    <script>
+        // Update cart count in the header based on localStorage
+        const cartCount = document.getElementById('cartCount');
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cartCount.textContent = cart.length;
+
+    </script>
+</head>
+<body>
+    <!-- Header section  -->
+    <header>
+        <div class="header">
+            <!-- logo  -->
+            <div class="nav_logo">
+                <div class="logo"></div>
+            </div>
+            <!-- location  -->
+            <div class="location border">
+                <div class="loc_icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="loc_text">
+                    <p class="location_p1">Delivered to</p>
+                    <p class="location_p2">All World</p>
+                </div>
+            </div>
+            <!-- search bar -->
+            <div class="search">
+                <div class="navsearch">
+                    <select class="selection">
+                        <option >All</option>
+                        <option >men</option>
+                    </select>
+                    <input type="text" placeholder="Search KUMO" class="Search-bar">
+                    <div class="addsearchicon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- login details  -->
+            <div class="login border">
+                <div class="login_icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="login_text">
+                    <a href="#">Login</a>
+                </div>
+            </div>
+            <!-- Return details  -->
+            <div class="order border">
+                <a href="$">Returns</a>
+                <a href="#">& Order</a>
+            </div>
+            <!-- Cart details  -->
+            <a href="cart.html">
+            <div class="cart border">
+                <div class="cart_icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <a href="@#">Cart</a>
+                <sup id="cartCount">0</sup>
+            </div>
+            </div>
+        </a>
+            <!-- Panel section  -->
+            <div class="panel">
+                <div class="menu border">
+                    <i class="fa-solid fa-bars"></i>
+                    <p class="panelP1">All</p>
+                </div>
+        
+                <div class="panelP2 border">
+                    <p>Today's Deals </p>
+                </div>
+        
+                <div class="panelP3 border">
+                    <p>Customer Service</p>
+                </div>
+        
+                <div class="panelP4 border">
+                    <p>Registry</p>
+                </div>
+                    
+                <div class="panelP5 border">
+                    <p>Gift Cards</p>
+                </div>
+        
+                <div class="panelP6 border">
+                    <p>Sell</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    
+
+   
+</body>
+</html>
